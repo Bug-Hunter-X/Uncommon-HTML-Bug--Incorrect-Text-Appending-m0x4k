@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    //Correct way to select the element and add text.
+    let myDiv = document.getElementById('myDiv');
+    let newParagraph = document.createElement('p'); // Create a new paragraph element
+    newParagraph.textContent = " This text is appended correctly."; //Set text content
+    myDiv.appendChild(newParagraph); // Append it to the div
+  </script>
+</body>
+</html>
