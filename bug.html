@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Incorrect way to select an element and add text. This could lead to unexpected behavior in some browsers or situations
+    document.getElementById('myDiv').innerText += " This text is appended incorrectly."; 
+  </script>
+</body>
+</html>
